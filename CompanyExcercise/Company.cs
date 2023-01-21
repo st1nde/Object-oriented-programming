@@ -8,5 +8,6 @@ namespace CompanyExcercise
 {
     internal class Company
     {
+
     }
 }
