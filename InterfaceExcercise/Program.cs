@@ -33,7 +33,6 @@ internal class Program
         store1.AddProduct(new Product("potato", 1.50, 3));
         store1.AddProduct(new Product("Carrot", 2.00, 10));
 
-        store1.PrintProducts();
 
         List<Customer> customers = new List<Customer>()
         {   new Customer("Masa", 1200),
@@ -41,13 +40,15 @@ internal class Program
             new Customer("Mesa", 12345)
         };
 
-        for (int i = 0; i < 4; i++) 
+        for (int i = 0; i < 3; i++) 
         {
 
             Console.WriteLine(customers[i].GetCustomer(customers[i].name) + "\n");
             Console.WriteLine(customers[i].GetBonus());
         }
-       
+
+        store1.PrintCustomers();
+        store1.PrintProducts();
 
     }
 }

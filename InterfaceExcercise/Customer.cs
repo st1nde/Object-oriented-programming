@@ -11,6 +11,8 @@ namespace InterfaceExcercise
     {
         public string name;
         public double purchases;
+        public List<Customer> customers;
+        public List<Product> products;
 
         public Customer(string name, double purchases)
         {

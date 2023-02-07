@@ -32,7 +32,7 @@ namespace InterfaceExcercise
             foreach (Product product in this.storeProducts)
             {
                 Console.WriteLine(product.ToString());
-                Console.WriteLine("Storage value " + product.CalculateTotal());
+                Console.WriteLine("Storage value " + product.CalculateTotal() + "\n");
             }
         }
 
@@ -46,14 +46,17 @@ namespace InterfaceExcercise
             this.storeCustomers.Add(customer);
         }
 
-        public void PrintCustomer()
-        {
-
-        }
-
         public void PrintCustomers()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Number of customers " + storeCustomers.Count + " \nCustomers information");
+            for (int i = 0; i < storeCustomers.Count; i++) 
+            {
+
+                Console.WriteLine(storeCustomers[i]);
+                Console.Write("\n");
+
+            }
         }
-    }
+
+    } 
 }
