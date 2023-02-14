@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleExcercise", "Vehicle
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExcercise", "InterfaceExcercise\InterfaceExcercise.csproj", "{F7DDC0A2-9A8E-468D-A484-63B308A5C9DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortExcercise", "SortExcercise\SortExcercise.csproj", "{5213184A-6208-4452-9CD3-44C34BEF698C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortExcercise", "SortExcercise\SortExcercise.csproj", "{5213184A-6208-4452-9CD3-44C34BEF698C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeExercise", "ShapeExercise\ShapeExercise.csproj", "{75AE65B3-3C2D-4801-9555-C6C8E32CF1D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsuranceExcercise", "InsuranceExcercise\InsuranceExcercise.csproj", "{BDC35C60-3E87-4F50-B7D5-0DB0835A7CF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{5213184A-6208-4452-9CD3-44C34BEF698C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5213184A-6208-4452-9CD3-44C34BEF698C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5213184A-6208-4452-9CD3-44C34BEF698C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AE65B3-3C2D-4801-9555-C6C8E32CF1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AE65B3-3C2D-4801-9555-C6C8E32CF1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AE65B3-3C2D-4801-9555-C6C8E32CF1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AE65B3-3C2D-4801-9555-C6C8E32CF1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC35C60-3E87-4F50-B7D5-0DB0835A7CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC35C60-3E87-4F50-B7D5-0DB0835A7CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC35C60-3E87-4F50-B7D5-0DB0835A7CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC35C60-3E87-4F50-B7D5-0DB0835A7CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
