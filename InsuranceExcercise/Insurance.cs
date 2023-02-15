@@ -8,20 +8,32 @@ namespace InsuranceExcercise
 {
     public class Insurance
     {
-        private String species;
-        private String name;
+        private string species;
+        private string name;
         private bool neutered;
         private double fee;
-        public Insurance(String animal, String name, bool isNeutered, double payment)
+
+        public string Species { get => species; set => species = value; }
+        public bool Neutered { get => neutered; set => neutered = value; }
+        public string Name { get => name; set => name = value; }
+
+        public Insurance(string animal, String name, bool isNeutered, double payment)
         {
-            this.species = animal;
-            this.name = name;
-            this.neutered = isNeutered;
+            this.Species = animal;
+            this.Name = name;
+            this.Neutered = isNeutered;
             this.fee = payment;
         }
-        public String GetNeuteredInfo()
+        public Insurance()
         {
-            if (neutered)
+            this.Species = string.Empty;
+            this.Name = string.Empty;
+            this.Neutered = false;
+            this.fee = 0.0;
+        }
+        public string GetNeuteredInfo()
+        {
+            if (Neutered)
             {
                 return "leikattu";
             }
@@ -30,9 +42,9 @@ namespace InsuranceExcercise
                 return "leikkaamaton";
             }
         }
-        public override String ToString()
+        public override string ToString()
         {
-            return this.species + ": " + this.name + ", " + this.GetNeuteredInfo();
+            return this.Species + ": " + this.Name + ", " + this.GetNeuteredInfo();
         }
     }
 }

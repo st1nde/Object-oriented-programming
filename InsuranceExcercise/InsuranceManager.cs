@@ -9,35 +9,60 @@ namespace InsuranceExcercise
     internal class InsuranceManager: Insurance
     {
 
-        string animal;
-        string name;
-        bool 
+        List<Insurance> List = new List<Insurance>();
+
         public InsuranceManager()
         {
 
         }
 
-        public void AddInsurance()
+        internal void AddInsurance(string animal, string name, bool isNeutered)
         {
-            string animal;
-            string name;
-            GetNeuteredInfo();
+            List.Add(new Insurance(animal, name, isNeutered, GetFee(animal, isNeutered)));
         }
 
-        double GetFee()
+        public double GetFee(string species, bool isNeutered)
         {
-            
+            if (species == "koira" && isNeutered == true)
+            {
+                return 50;
+            }
+            else if (species == "koira" && isNeutered == false)
+            {
+                return 80;
+            }
+            else if (species == "kissa" && isNeutered == true)
+            {
+                return 40;
+            }
+            else if (species == "kissa" && isNeutered == false)
+            {
+                return 60;
+            }
+            else return 0;
 
         }
 
-        public void PrintInsurances()
+        internal void PrintInsurances()
         {
-
+            Console.WriteLine("Vakuutuksia yhteensä " + List.Count + "\n");
+            Console.WriteLine("Vakuutukset:\n");
+            foreach (Insurance insurance in List)
+            {
+                Console.Write(" " + insurance.ToString() + "\n\n");
+            }
         }
 
-        public void FindInsurances()
+        public void FindInsurances(string species, bool isNeutered)
         {
-
+            Console.WriteLine("Löytyi:\n");
+            foreach (Insurance insurance in List)
+            {
+                if(insurance.Species == species && isNeutered == insurance.Neutered)
+                {
+                    Console.WriteLine(" " + species + ": " + Name + "vakuutusmaksu " + GetFee(species, isNeutered) + "e\n");
+                }
+            }
         }
     }
 }
